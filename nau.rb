@@ -5,20 +5,20 @@
 class Nau < Formula
   desc "Modular project management tool."
   homepage "https://github.com/antonio-leitao/homebrew-taps"
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/antonio-leitao/nau/releases/download/v0.2.0/nau_Darwin_arm64.tar.gz"
-      sha256 "8e5e883ee3ea3a7e2d4d3ac6c932c0c95729eead07c65b0292902ab992b0967b"
+      url "https://github.com/antonio-leitao/nau/releases/download/v0.3.0/nau_Darwin_arm64.tar.gz"
+      sha256 "616a9cbee594033fc6aa46412290ac350c420a35cd356fa5c8088e0b5e068885"
 
       def install
         bin.install "nau"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/antonio-leitao/nau/releases/download/v0.2.0/nau_Darwin_x86_64.tar.gz"
-      sha256 "37632703b10013eed6993b2a3a277e35b964d93dfa29b2b32ba8c38d43ea4838"
+      url "https://github.com/antonio-leitao/nau/releases/download/v0.3.0/nau_Darwin_x86_64.tar.gz"
+      sha256 "a0323801cb15d24430e14030da2dd955ec50d40a4ef3cff00fdaf634e696e79a"
 
       def install
         bin.install "nau"
@@ -28,16 +28,16 @@ class Nau < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/antonio-leitao/nau/releases/download/v0.2.0/nau_Linux_arm64.tar.gz"
-      sha256 "a5ec294431bf82517aa4e0c48b9476fe86f77de8298b1fecfd7a1f7b9fe5cef8"
+      url "https://github.com/antonio-leitao/nau/releases/download/v0.3.0/nau_Linux_arm64.tar.gz"
+      sha256 "69ded45e926f6239eae6af94a62c682188353bcac0480d09568882fbbbcc2ad0"
 
       def install
         bin.install "nau"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/antonio-leitao/nau/releases/download/v0.2.0/nau_Linux_x86_64.tar.gz"
-      sha256 "ac82aa66dfc17630a19774dc623b3e0b8678e3f76b4097428e85d030e8505c9b"
+      url "https://github.com/antonio-leitao/nau/releases/download/v0.3.0/nau_Linux_x86_64.tar.gz"
+      sha256 "ad81780dd3932896266d107b46c006106c80f7a5aeeff463827340232948edbf"
 
       def install
         bin.install "nau"
