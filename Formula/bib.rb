@@ -1,34 +1,29 @@
 class Bib < Formula
   desc "Academic paper manager with automatic BibTeX extraction and fuzzy search"
   homepage "https://github.com/antonio-leitao/bib"
-  version "0.5.14"
+  version "0.5.15"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/antonio-leitao/bib/releases/download/v0.5.14/bib-x86_64-apple-darwin.tar.gz"
-      sha256 "2fad830e43210c971a0743ed1feee03461057e8c38c1c7b8769c898ea91e909a"
+      url "https://github.com/antonio-leitao/bib/releases/download/v0.5.15/bib-x86_64-apple-darwin.tar.gz"
+      sha256 "2546a0080031fdffad2eee48610ff05c5d40b3e82f207e7e62890915227bf532"
     elsif Hardware::CPU.arm?
-      url "https://github.com/antonio-leitao/bib/releases/download/v0.5.14/bib-aarch64-apple-darwin.tar.gz"
-      sha256 "9bbefe4778eaad550305452728f4f3222efffa2cfa2a5594c12a485e92095b7e"
+      url "https://github.com/antonio-leitao/bib/releases/download/v0.5.15/bib-aarch64-apple-darwin.tar.gz"
+      sha256 "077579abd9af1ad200030d735d395057888ebcda42c75c4a8c3f6e684bd0d2cc"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/antonio-leitao/bib/releases/download/v0.5.14/bib-x86_64-linux.tar.gz"
-      sha256 "c9908a4ee6c13ff6d8cb6fe48586626943a5c5edd1309a004d144e153e0beab7"
+      url "https://github.com/antonio-leitao/bib/releases/download/v0.5.15/bib-x86_64-linux.tar.gz"
+      sha256 "f8cfc685a3fc90c03e5a517f6ae16edf960c08f3a95f854d9b144d83c8e5284e"
     end
   end
 
   def install
     # Install binary
     bin.install "bib"
-    
-    # Install completions - Homebrew handles the rest automatically
-    bash_completion.install "completions/bib.bash" => "bib"
-    zsh_completion.install "completions/_bib" => "_bib"
-    fish_completion.install "completions/bib.fish" => "bib.fish"
     
     # Install docs
     doc.install "README.md" if File.exist?("README.md")
