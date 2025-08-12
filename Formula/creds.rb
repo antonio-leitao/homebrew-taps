@@ -1,23 +1,23 @@
 class Creds < Formula
   desc "Secure, Git-backed credential manager with strong encryption"
   homepage "https://github.com/antonio-leitao/vault-rs"
-  version "0.1.3"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/antonio-leitao/vault-rs/releases/download/v0.1.3/creds-x86_64-apple-darwin.tar.gz"
-      sha256 "db33c4fcd549022ab53797afdfab315c3cbc3c3f74fd9353a0b73b3365ac8fe8"
+      url "https://github.com/antonio-leitao/vault-rs/releases/download/v0.2.0/creds-x86_64-apple-darwin.tar.gz"
+      sha256 "4af3f8f61ebc4c05a811f2b4be3ad8fa307e5c9cbca80228b09421a3e8942212"
     elsif Hardware::CPU.arm?
-      url "https://github.com/antonio-leitao/vault-rs/releases/download/v0.1.3/creds-aarch64-apple-darwin.tar.gz"
-      sha256 "20fe9dec7a00b30169440ea5215d33028d583c90294cd4ad5b6192deb4464e3a"
+      url "https://github.com/antonio-leitao/vault-rs/releases/download/v0.2.0/creds-aarch64-apple-darwin.tar.gz"
+      sha256 "75e2bf77b5873811ee45c33deb219c239bef1ac7461f0b96ac0e5fe3c1d95c8d"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/antonio-leitao/vault-rs/releases/download/v0.1.3/creds-x86_64-linux.tar.gz"
-      sha256 "9ef2db5394b097b06e96a7cfe6d911663b756f28560e9471d7f1bc75caa8192d"
+      url "https://github.com/antonio-leitao/vault-rs/releases/download/v0.2.0/creds-x86_64-linux.tar.gz"
+      sha256 "78674276b1fb7b607867f369262cdc3fac7a28f11dae487a75317113d0fc6bd5"
     end
   end
 
