@@ -1,23 +1,23 @@
 class Bib < Formula
   desc "Academic paper manager with automatic BibTeX extraction and fuzzy search"
   homepage "https://github.com/antonio-leitao/bib"
-  version "0.5.16"
+  version "0.5.17"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/antonio-leitao/bib/releases/download/v0.5.16/bib-x86_64-apple-darwin.tar.gz"
-      sha256 "ba4442d1f7e179795901a4202da3d758dd9cc1dadb86787cd553b020c5408c44"
+      url "https://github.com/antonio-leitao/bib/releases/download/v0.5.17/bib-x86_64-apple-darwin.tar.gz"
+      sha256 "fab51074b8c065de2f0991f2dd0535dbbfc10174b1e9c633251f5a95731b3084"
     elsif Hardware::CPU.arm?
-      url "https://github.com/antonio-leitao/bib/releases/download/v0.5.16/bib-aarch64-apple-darwin.tar.gz"
-      sha256 "8d7f4c2c29d5f2f99891568c237e1aa4fc5d8abf851fc4e1ef16bcb0074ccbd0"
+      url "https://github.com/antonio-leitao/bib/releases/download/v0.5.17/bib-aarch64-apple-darwin.tar.gz"
+      sha256 "81b57d57b12e6957d61e41aa62a8133d8f04b0170f6d3ee7525daf14aa28436f"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/antonio-leitao/bib/releases/download/v0.5.16/bib-x86_64-linux.tar.gz"
-      sha256 "fc85f0f32c21a69b3a8f78b3732e7821fd04b68f9aaf8eaee78c5dfb227e2bb7"
+      url "https://github.com/antonio-leitao/bib/releases/download/v0.5.17/bib-x86_64-linux.tar.gz"
+      sha256 "2aedb38fff68a966ebde8d2e75739ac7249ce0fa9b57924bb121f6f121f0e19d"
     end
   end
 
